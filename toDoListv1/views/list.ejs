@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<!--// using the scriptlet tag
+	 <% if(theday==="saturday"||theday==="sunday"){ %>
+		<h1 style="color:red">today is <%=theday%>!</h1>
+	
+	<% }else{ %>
+		<h1 style="color:yellow">today is <%=theday%>!</h1>
+	<%}%> -->
+
+	<div class="box" id="heading">
+		<h1>ANK</h1>
+		<h1>
+		<%=theday%></h1>
+	</div>
+	<div class="box">
+		<% for(var i=0; i< newitem.length; i++) { %>
+		<div class="item">
+			<input type="checkbox" name="">
+			<p><%= newitem[i] %></p>
+		
+		</div>
+		<% } %>
+		
+	<form class="item" action="/" method="post">
+		<input type="text" name="newvalue" placeholder="New Item" autocomplete="off">
+		<button type="submit" name="button">+</button>
+	</form>
+	</div>
+	
+	
+</body>
+</html
